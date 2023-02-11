@@ -1,0 +1,392 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+
+</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+        html
+        {
+            _overflow-y: scroll;
+        }
+        #gotopbtn
+        {
+            background: #3b89c7;
+            position:fixed;
+            bottom: 10px;
+            right: 10px;
+            display: none;
+            cursor: pointer;
+            font-size: 14px;
+            line-height: 30px;
+            border: 1px solid #aaa;
+        }
+    </style>
+    <link href="../App_Themes/Default/Default.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/dialog.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/easyui.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/expand.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/icon.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/reset.css" rel="stylesheet" type="text/css" /><link href="../App_Themes/Default/validatorAuto.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="../js/jQselect.js"></script>
+    <script type="text/javascript" src="../js/web.js"></script>
+    <script type="text/javascript" src="../js/verify.js"></script>
+    <script type="text/javascript" src="../js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../js/easyui.lang.js"></script>
+    <script type="text/javascript" src="../js/formValidator.js"></script>
+    <script type="text/javascript" src="../js/formValidatorRegex.js"></script>
+    <script type="text/javascript" src="../js/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="../js/XhEdit/xheditor-zh-cn.min.js"></script>
+    <script type="text/javascript" src="../js/XhEdit/ubb.src.js"></script>
+    <script type="text/javascript" src="../js/UserDef.js"></script>
+    <script type="text/javascript" src="../js/tipsdiv.js"></script>
+    
+    
+    
+    <div class="conbox">
+        <form method="post" action="./kbcx_xs.aspx?xh=2022200859" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTM0ODkzOTU2D2QWAmYPZBYCAgEPZBYCAgUPZBYQAgEPEA8WBh4NRGF0YVRleHRGaWVsZAUIdGVybW5hbWUeDkRhdGFWYWx1ZUZpZWxkBQh0ZXJtY29kZR4LXyFEYXRhQm91bmRnZBAVARsyMDIyLTIwMjPlrablubTnrKzkuozlrabmnJ8VAQI0MhQrAwFnZGQCBQ8PFgIeCEFyclBhcm1zFQICNDICeHNkZAIHDzwrAAsBAA8WCB4IRGF0YUtleXMWAB4LXyFJdGVtQ291bnQCDh4JUGFnZUNvdW50AgEeFV8hRGF0YVNvdXJjZUl0ZW1Db3VudAIOZBYCZg9kFhwCAQ9kFhRmDw8WAh4EVGV4dAUDMTA5ZGQCAQ8PFgQfCAUG5LiK5Y2IHgdSb3dTcGFuAgRkZAICDw8WAh8IBQExZGQCAw8PFgIfCAUGJm5ic3A7ZGQCBA8PFgIfCAUGJm5ic3A7ZGQCBQ8PFgIfCAUGJm5ic3A7ZGQCBg8PFgIfCAUGJm5ic3A7ZGQCBw8PFgIfCAUGJm5ic3A7ZGQCCA8PFgIfCAUGJm5ic3A7ZGQCCQ8PFgIfCAUGJm5ic3A7ZGQCAg9kFhRmDw8WAh8IBQMxMTBkZAIBDw8WBB8IBQbkuIrljYgeB1Zpc2libGVoZGQCAg8PFgIfCAUBMmRkAgMPDxYCHwgFBiZuYnNwO2RkAgQPDxYCHwgFBiZuYnNwO2RkAgUPDxYCHwgFBiZuYnNwO2RkAgYPDxYCHwgFBiZuYnNwO2RkAgcPDxYCHwgFBiZuYnNwO2RkAggPDxYCHwgFBiZuYnNwO2RkAgkPDxYCHwgFBiZuYnNwO2RkAgMPZBYUZg8PFgIfCAUDMTExZGQCAQ8PFgQfCAUG5LiK5Y2IHwpoZGQCAg8PFgIfCAUBM2RkAgMPDxYEHwgFlgHor77nqIs656eR5oqA6Iux6K+t5YaZ5L2cPGJyPuePree6pzrnp5HmioDoi7Hor63lhpnkvZwtNOePrTxicj4o5piO55CG5YyXMTA0KTxicj4xLTE15ZGoOui/nue7reWRqCAg5pif5pyf5LiAIDMtNOiKgjxicj7kuLvorrLmlZnluIg66YOR5aSn5LyfPGJyPjxicj4fCQICZGQCBA8PFgQfCAWIAeivvueoizroi7Hor63lj6Por608YnI+54+t57qnOuiLseivreWPo+ivrS0xMOePrTxicj4o5piO55CG5YyXNTA4KTxicj4zLTE35ZGoOui/nue7reWRqCAg5pif5pyf5LqMIDMtNOiKgjxicj7kuLvorrLmlZnluIg65byg54eVPGJyPjxicj4fCQICZGQCBQ8PFgQfCAWHAeivvueoizrnu7zlkIjoi7Hor608YnI+54+t57qnOue7vOWQiOiLseivrS0054+tPGJyPijmmI7nkIbljJcxMDQpPGJyPjEtMTXlkag66L+e57ut5ZGoICDmmJ/mnJ/kuIkgMy006IqCPGJyPuS4u+iusuaVmeW4iDrliJjmpaA8YnI+PGJyPh8JAgJkZAIGDw8WBB8IBbYB6K++56iLOuW1jOWFpeW8j+ezu+e7n++8iOWPjOivre+8iTxicj7nj63nuqc65bWM5YWl5byP57O757uf77yI5Y+M6K+t77yJLTLnj608YnI+KOaYjueQhuWMlzEwNCk8YnI+MS055ZGoOui/nue7reWRqCAg5pif5pyf5LiAIDctOOiKgiwg5pif5pyf5ZubIDMtNOiKgjxicj7kuLvorrLmlZnluIg6546L5a6+PGJyPjxicj4fCQICZGQCBw8PFgQfCAWeAeivvueoizrnianogZTnvZHlvIDlj5HkuI7lupTnlKg8YnI+54+t57qnOueJqeiBlOe9keW8gOWPkeS4juW6lOeUqDxicj4o5piO55CG5YyXNDA4KTxicj4xMC0xOOWRqDrov57nu63lkaggIOaYn+acn+S6lCAzLTToioI8YnI+5Li76K6y5pWZ5biIOuacseaIkOadsDxicj48YnI+HwkCAmRkAggPDxYCHwgFBiZuYnNwO2RkAgkPDxYCHwgFBiZuYnNwO2RkAgQPZBYUZg8PFgIfCAUDMTEyZGQCAQ8PFgQfCAUG5LiK5Y2IHwpoZGQCAg8PFgIfCAUBNGRkAgMPDxYEHwgFlgHor77nqIs656eR5oqA6Iux6K+t5YaZ5L2cPGJyPuePree6pzrnp5HmioDoi7Hor63lhpnkvZwtNOePrTxicj4o5piO55CG5YyXMTA0KTxicj4xLTE15ZGoOui/nue7reWRqCAg5pif5pyf5LiAIDMtNOiKgjxicj7kuLvorrLmlZnluIg66YOR5aSn5LyfPGJyPjxicj4fCmhkZAIE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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/pyxx/WebResource.axd?d=WpyV1hPASVlqJPBLa4NkHoBepxY3Xn-7iVs3A5qYB-nMylbEP6yINMslAOlin_dV8setg5XGVJPRUvbos2C1kT9SJIkBpuwjzD0q9S4InvQ1&amp;t=636765208020000000" type="text/javascript"></script>
+
+
+<script src="/pyxx/ScriptResource.axd?d=xJqPsBurw3C36Yk8waiSA6LTlqyKDwbT5Rvoj2fdOOVBULHJ034seUaHW9s_26S1x90RqaNFFIB1TV3PhSiZeYMyUHy1Y1w4h-8XjxB4ZPGP-IYJG8yTmDSGdQDvVbLydcZ2uL4kNkqOpZ4nzjIWMrdLV8KPGkeny_1k8n4n4_YA2deqE1gpst0qWfpCEKm50&amp;t=2b48f70a" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax 客户端框架未能加载。');
+//]]>
+</script>
+
+<script src="/pyxx/ScriptResource.axd?d=QsAjfApkF_fO915Le-yhRINAwJ-qW2Aq_brZVTbZCqVsYejGzHJM0Xvb9NIjAAJgMPa2doXQtLdwdAips9OjXIPN5FTaA-IrNLJpCYzYakUX45vESdXvooDNyNZpgqp9yM2zl86M_XdXQjS6EOkPrJ_nbut6TNq_Hx-Y5TwFX7x1TO2gWq1VuSsfka-OwsrH0&amp;t=2b48f70a" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="1BFC53B1" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+    
+<style type="text/css">
+.location{background:url(../images/locationbg.png) repeat-x;border:1px solid #dae4ea;margin-bottom:5px;height:24px;}
+.location h2{background:url(../images/locationicon.png) no-repeat 10px 6px;float:left;height:22px;line-height:22px;font-size:12px;color:#0062af; font-weight:bold; padding-left:20px;display:inline; margin-top:2px;}
+.location span{float:right;height:24px;line-height:24px;margin-right:10px; background:url(../images/locationrighelp.png) no-repeat 4px 4px; padding-left:20px;}
+.location span a{color:#0060ae; font-size:12px;}
+</style>
+
+
+<div class="location"><span><a href="../SysHelp/SysHelpShow.aspx?Type=bb9377ef9773719973f45c7c7eb69c2ffcb6668537bf6d6cc1bdc2fa4b0f99cd"
+            target="_blank" style=" text-decoration:none;">帮助</a></span><h2>学生课表查询</h2></div>
+
+
+
+
+
+        
+        
+    <div id="Fin_Context">
+        <div id="Fin_Box">
+            <table class="td" style="width: 100%;" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                    <td nowrap>
+                        学期：
+                        <select name="ctl00$MainWork$drpxq" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainWork$drpxq\&#39;,\&#39;\&#39;)&#39;, 0)" id="MainWork_drpxq">
+	<option selected="selected" value="42">2022-2023学年第二学期</option>
+
+</select>
+                        <input type="image" name="ctl00$MainWork$btnSearch" id="MainWork_btnSearch" src="../images/query.gif" align="absbottom" style="border-style:None;" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="pagestop" class="clearfix">
+            <div class="pagestopl">
+            </div>
+            <div class="pagestopr">
+                <a id="MainWork_WUCpyjhdy_LnkBtPrint" href="javascript:__doPostBack(&#39;ctl00$MainWork$WUCpyjhdy$LnkBtPrint&#39;,&#39;&#39;)">
+    <img src="http://gmis.aust.edu.cn:80/pyxx/images/dy.png" border="0" />
+</a>
+
+<input type="hidden" name="ctl00$MainWork$WUCpyjhdy$HFpath" id="MainWork_WUCpyjhdy_HFpath" value="D:\Gmis\pyxx\pyxx\WordCells\xskbdy.doc" />
+<input type="hidden" name="ctl00$MainWork$WUCpyjhdy$HFfilename" id="MainWork_WUCpyjhdy_HFfilename" value="2022200859" />
+<input type="hidden" name="ctl00$MainWork$WUCpyjhdy$HFdatatype" id="MainWork_WUCpyjhdy_HFdatatype" value="xskbdy" />
+            </div>
+        </div>
+        <table id="Table2" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+            <tr>
+                <td valign="top" colspan="3">
+                    <table class="GridViewStyle" cellspacing="0" rules="all" border="1" id="MainWork_DataGrid1" style="background-color:White;border-color:#9CD7FF;width:100%;border-collapse:collapse;">
+	<tr align="center" style="white-space:nowrap;">
+		<td>&nbsp;</td><td>节次</td><td>星期一</td><td>星期二</td><td>星期三</td><td>星期四</td><td>星期五</td><td>星期六</td><td>星期日</td>
+	</tr><tr style="white-space:nowrap;">
+		<td align="center" rowspan="4" style="width:20px;">上午</td><td align="center" style="width:20px;">1</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr style="white-space:nowrap;">
+		<td align="center" style="width:20px;">2</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr style="white-space:nowrap;">
+		<td align="center" style="width:20px;">3</td><td rowspan="2">课程:科技英语写作<br>班级:科技英语写作-4班<br>(明理北104)<br>1-15周:连续周  星期一 3-4节<br>主讲教师:郑大伟<br><br></td><td rowspan="2">课程:英语口语<br>班级:英语口语-10班<br>(明理北508)<br>3-17周:连续周  星期二 3-4节<br>主讲教师:张燕<br><br></td><td rowspan="2">课程:综合英语<br>班级:综合英语-4班<br>(明理北104)<br>1-15周:连续周  星期三 3-4节<br>主讲教师:刘楠<br><br></td><td rowspan="2">课程:嵌入式系统（双语）<br>班级:嵌入式系统（双语）-2班<br>(明理北104)<br>1-9周:连续周  星期一 7-8节, 星期四 3-4节<br>主讲教师:王宾<br><br></td><td rowspan="2">课程:物联网开发与应用<br>班级:物联网开发与应用<br>(明理北408)<br>10-18周:连续周  星期五 3-4节<br>主讲教师:朱成杰<br><br></td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr style="white-space:nowrap;">
+		<td align="center" style="width:20px;">4</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr style="white-space:nowrap;">
+		<td align="center" rowspan="5" style="width:20px;">下午</td><td align="center" style="width:20px;">5</td><td rowspan="2">课程:图像处理技术<br>班级:图像处理技术<br>(明理北102)<br>10-15周:连续周  星期一 5-7节, 星期日 10-12节<br>主讲教师:姜媛媛<br><br></td><td>&nbsp;</td><td rowspan="2">课程:科技英语翻译<br>班级:科技英语翻译-4班<br>(明理北104)<br>1-15周:连续周  星期三 5-6节<br>主讲教师:王宗华<br><br></td><td rowspan="2">课程:物联网开发与应用<br>班级:物联网开发与应用<br>(明理北410)<br>10-18周:连续周  星期四 5-6节<br>主讲教师:朱成杰<br><br></td><td rowspan="2">课程:体育<br>班级:体育-篮球2班<br>(信义体育场-篮球场4 )<br>3-20周:连续周  星期五 5-6节<br>主讲教师:杨春<br><br></td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr style="white-space:nowrap;">
+		<td align="center" style="width:20px;">6</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr style="white-space:nowrap;">
+		<td align="center" style="width:20px;">7</td><td>课程:嵌入式系统（双语）<br>班级:嵌入式系统（双语）-2班<br>(明理北104)<br>1-9周:连续周  星期一 7-8节, 星期四 3-4节<br>主讲教师:王宾<br><br>课程:图像处理技术<br>班级:图像处理技术<br>(明理北102)<br>10-15周:连续周  星期一 5-7节, 星期日 10-12节<br>主讲教师:姜媛媛<br><br></td><td>&nbsp;</td><td>&nbsp;</td><td rowspan="3">课程:Python程序设计（双语）<br>班级:Python程序设计（双语）-1班<br>(明理北310)<br>1-12周:连续周  星期四 7-9节<br>主讲教师:洪炎<br><br></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr style="white-space:nowrap;">
+		<td align="center" style="width:20px;">8</td><td>课程:嵌入式系统（双语）<br>班级:嵌入式系统（双语）-2班<br>(明理北104)<br>1-9周:连续周  星期一 7-8节, 星期四 3-4节<br>主讲教师:王宾<br><br></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr style="white-space:nowrap;">
+		<td align="center" style="width:20px;">9</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr style="white-space:nowrap;">
+		<td align="center" rowspan="5" style="width:20px;">晚上</td><td align="center" style="width:20px;">10</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td rowspan="3">课程:图像处理技术<br>班级:图像处理技术<br>(明理北102)<br>10-15周:连续周  星期一 5-7节, 星期日 10-12节<br>主讲教师:姜媛媛<br><br></td>
+	</tr><tr style="white-space:nowrap;">
+		<td align="center" style="width:20px;">11</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr style="white-space:nowrap;">
+		<td align="center" style="width:20px;">12</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr style="white-space:nowrap;">
+		<td align="center" style="width:20px;">13</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr><tr style="white-space:nowrap;">
+		<td align="center" style="width:20px;">14</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+	</tr>
+</table>
+                    
+                    
+                    
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" colspan="3">
+                    
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" colspan="3">
+                    <br>
+                    <table id="Table3" cellspacing="0" cellpadding="0" width="624" border="1" style="border-right: 1px;
+                        border-top: 1px; border-left: 1px; width: 624px; border-bottom: 1px" height="20"
+                        bordercolor="#99ff66">
+                        <tr>
+                            <td style="width: 164px" valign="top" class="tdstyle">
+                                上午:
+                            </td>
+                            <td style="width: 191px" valign="top" class="tdstyle">
+                                下午:
+                            </td>
+                            <td valign="top" class="tdstyle">
+                                晚上：
+                            </td>
+                        </tr>
+                        <tr style="border-right: 1px; border-top: 1px; border-left: 1px; border-bottom: 1px">
+                            <td style="width: 164px" valign="top">
+                                <table id="MainWork_dgListSw" cellspacing="0" style="width:100%;border-collapse:collapse;">
+	<tr>
+		<td>
+                                        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                            <tr>
+                                                <td align="left">
+                                                    <font size="2">
+                                                        第一节课</font>&nbsp;&nbsp;<font size="2">-</fong>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+	</tr><tr>
+		<td>
+                                        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                            <tr>
+                                                <td align="left">
+                                                    <font size="2">
+                                                        第二节课</font>&nbsp;&nbsp;<font size="2">-</fong>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+	</tr><tr>
+		<td>
+                                        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                            <tr>
+                                                <td align="left">
+                                                    <font size="2">
+                                                        第三节课</font>&nbsp;&nbsp;<font size="2">-</fong>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+	</tr><tr>
+		<td>
+                                        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                            <tr>
+                                                <td align="left">
+                                                    <font size="2">
+                                                        第四节课</font>&nbsp;&nbsp;<font size="2">-</fong>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+	</tr>
+</table>
+                            </td>
+                            <td style="width: 191px" valign="top">
+                                <table id="MainWork_dgListXw" cellspacing="0" style="width:100%;border-collapse:collapse;">
+	<tr>
+		<td>
+                                        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                            <tr>
+                                                <td align="left">
+                                                    <font size="2">
+                                                        第五节课</font>&nbsp;&nbsp;<font size="2">-</font>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+	</tr><tr>
+		<td>
+                                        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                            <tr>
+                                                <td align="left">
+                                                    <font size="2">
+                                                        </font>&nbsp;&nbsp;<font size="2">-</font>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+	</tr><tr>
+		<td>
+                                        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                            <tr>
+                                                <td align="left">
+                                                    <font size="2">
+                                                        </font>&nbsp;&nbsp;<font size="2">-</font>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+	</tr><tr>
+		<td>
+                                        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                            <tr>
+                                                <td align="left">
+                                                    <font size="2">
+                                                        </font>&nbsp;&nbsp;<font size="2">-</font>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+	</tr><tr>
+		<td>
+                                        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                            <tr>
+                                                <td align="left">
+                                                    <font size="2">
+                                                        </font>&nbsp;&nbsp;<font size="2">-</font>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+	</tr>
+</table>
+                            </td>
+                            <td valign="top">
+                                <table id="MainWork_dgListWs" cellspacing="0" style="width:180px;border-collapse:collapse;">
+	<tr>
+		<td>
+                                        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                            <tr>
+                                                <td align="left">
+                                                    <font size="2">
+                                                        </font>&nbsp;&nbsp;<font size="2">-<font></font>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+	</tr><tr>
+		<td>
+                                        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                            <tr>
+                                                <td align="left">
+                                                    <font size="2">
+                                                        </font>&nbsp;&nbsp;<font size="2">-<font></font>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+	</tr><tr>
+		<td>
+                                        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                            <tr>
+                                                <td align="left">
+                                                    <font size="2">
+                                                        </font>&nbsp;&nbsp;<font size="2">-<font></font>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+	</tr><tr>
+		<td>
+                                        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                            <tr>
+                                                <td align="left">
+                                                    <font size="2">
+                                                        </font>&nbsp;&nbsp;<font size="2">-<font></font>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+	</tr><tr>
+		<td>
+                                        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                            <tr>
+                                                <td align="left">
+                                                    <font size="2">
+                                                        </font>&nbsp;&nbsp;<font size="2">-<font></font>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+	</tr>
+</table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <script language="javascript">
+            function selDs() {
+                var thisdate = new Date();
+                var thistime = thisdate.getTime();
+                window.open("../webcontrol/seljs.aspx?type=1&click=1&id=" + thisdate + thistime, "选择任课教师", "toolbar=no,status=no,resizable=no,scrollbars= no")
+            }
+        </script>
+    </div>
+
+        
+
+        </form>
+    </div>
+    <iframe id="fullbg" class="noscreen" src="about:blank"></iframe>
+</body>
+</html>
