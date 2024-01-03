@@ -1,9 +1,15 @@
-<mxfile host="app.diagrams.net" modified="2024-01-03T11:02:46.197Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" version="22.1.16" etag="Kt2QTN3PImINRNuQbj8d" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-03T11:13:36.958Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="WoHb2X3FmKGqQ2RzhMK4" version="22.1.16" type="github">
   <diagram name="第 1 页" id="JL845sWL3D5khFoLJUMt">
-    <mxGraphModel>
+    <mxGraphModel dx="1050" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="WgOFhhhxymoH--bNk3-i-22" value="" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer.svg;" vertex="1" parent="1">
+          <mxGeometry x="370" y="220" width="110" height="149.07" as="geometry" />
+        </mxCell>
+        <mxCell id="WgOFhhhxymoH--bNk3-i-24" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;strokeWidth=1;align=center;outlineConnect=0;dashed=0;outlineConnect=0;shape=mxgraph.aws3d.arrowNW;fillColor=#000000;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="190" y="303.07" width="115.5" height="66" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
